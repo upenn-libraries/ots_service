@@ -1,6 +1,8 @@
+require "ots_service/message"
+require "ots_service/secret"
 require "ots_service/version"
 
 module OtsService
-  class Error < StandardError; end
-  # Your code goes here...
+  class OtsError < StandardError; end
+  class MissingPassphraseError < OtsError; end
 end
